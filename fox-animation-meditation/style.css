@@ -67,7 +67,7 @@ section {
 .eyes-close {
     transform: translateY(200%);
     z-index: 20;
-    animation: eyes-open 2s forwards, eyes-close-open 4s steps(1) 4s forwards;
+    animation: eyes-open 30s infinite;
     position: absolute;
     /* opacity: 1; */
 }
@@ -156,19 +156,19 @@ section {
     65%, 70% {
         opacity: 1;
     }
-    
-    70%, 75% {
-        opacity: 0;
-    }
 }
 
 @keyframes eyes-open {
-    0%, 90% {
+    0%, 5% {
         opacity: 1;
     }
 
-    100% {
+    6%, 20% {
         opacity: 0;
+    }
+
+    21%, 100% {
+        opacity: 1;
     }
 }
 
