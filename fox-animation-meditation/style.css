@@ -21,7 +21,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* animation: opacity 5s steps(1) forwards; */
+    animation: opacity .5s steps(1) forwards;
     /* border: 5px solid black; */
 }
 
@@ -67,7 +67,7 @@ section {
 .eyes-close {
     transform: translateY(200%);
     z-index: 20;
-    animation: eyes-open 30s infinite;
+    animation: eyes-open 15s 2s infinite;
     position: absolute;
     /* opacity: 1; */
 }
@@ -136,10 +136,10 @@ section {
 }
 
 @keyframes opacity {
-    0%,100% {
+    0% {
         opacity: 0;
     }
-    10%,70% {
+    100% {
         opacity: 1;
     }
 }
@@ -163,11 +163,11 @@ section {
         opacity: 1;
     }
 
-    6%, 20% {
+    5.1%, 10% {
         opacity: 0;
     }
 
-    21%, 100% {
+    10.1%, 100% {
         opacity: 1;
     }
 }
